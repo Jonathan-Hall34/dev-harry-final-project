@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>dev-harry-final</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container mt-5">
+  <header class="bg-dark text-light text-center py-3">
+    <h1>🎮 Gaming Profile Form 🎮</h1>
+    <p>Customize your personal gaming preferences</p>
+  </header>
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Edit Your Gaming Preferences</h3>
+        <form id="myForm">
+          <div class="input-group mb-3">
+            <span class="input-group-text">Gamertag</span>
+            <input type="text" id="gamertag" class="form-control" placeholder="Enter your gamertag">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Preferred Console</label><br>
+            <input type="radio" name="console" id="consoleXbox" value="Xbox"> Xbox
+            <input type="radio" name="console" id="consolePlayStation" value="PlayStation"> PlayStation
+            <input type="radio" name="console" id="consolePC" value="PC"> PC
+          </div>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="gameTitle">What Game Are You Playing?</label>
+            <select id="gameTitle" class="form-select">
+              <option selected>Choose your game...</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="genre">What Genre is the Game?</label>
+            <select id="genre" class="form-select">
+              <option selected>Choose genre...</option>
+              <option value="Shooter">Shooter</option>
+              <option value="RPG">RPG</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Simulation">Simulation</option>
+              <option value="MMO">MMO</option>
+              <option value="Platformer">Platformer</option>
+              <option value="Puzzle">Puzzle</option>
+              <option value="Casual">Casual</option>
+              <option value="Indie">Indie</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Session Date</span>
+            <input type="date" id="date" class="form-control">
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" id="subscribe" class="form-check-input">
+            <label for="subscribe" class="form-check-label highlight">Subscribe to Gaming News</label>
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-secondary gaming-btn" id="loadLastForm">Load Author's Form</button>
+            <button type="button" class="btn btn-primary gaming-btn" id="submitForm">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3>Form Summary</h3>
+        <pre id="output" class="bg-light p-3"></pre>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light text-center py-3">
+    <p>Created by Jonathan Hall | <a href="https://github.com/Jonathan-Hall34/dev-harry-final-project" target="_blank" class="text-warning">GitHub Repo</a> |
+      <a href="https://validator.w3.org/" target="_blank" class="text-warning">Nu HTML Validator</a>
+    </p>
+  </footer>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
+<script  src="scripts/script.js"></script>
+
+</body>
+</html>
